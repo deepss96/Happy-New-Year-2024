@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College New Year 2024 Greeting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img class="card-bg." src="New Year 2024.jpg" height="600" width="500" alt="">
+        </div>
+        <div class="title">
+            <h2>H a p p y</h2>
+            <h1>New Year</h1>
+            <h3>& Stay Happily</h3>
+        </div>
+    </div>
+    <div class="clickme">
+        <a href="page2.html" target="_blank" class="text"><button class="button"><h4>Click Me</h4></button></a>
+   
+      </div>
+    <script>
+        const container = document.querySelector(".container");
+        const card = document.querySelector(".card")
+        const title = document.querySelector(".title")
+     
+
+        container.addEventListener("mousemove",(rotate) => {
+            let x = (innerWidth / 2 - rotate.pageX) / 15;
+            let y = (innerHeight / 2 - rotate.pageY) / 15;
+
+            card.style.transform = "rotateY("+ x + "deg) rotateX(" + y +"deg)";
+        });
+
+        container.addEventListener("mouseover", () => {
+            title.style.transform = "translate3d(0, 0, 150px)";
+            santa.style.transform = "translate3d(0, 0, 200px)";
+            tree.style.transform  = "translate3d(0, 0, 100px)";
+            card.style.transition = "all 0.1s ease";
+        });
+
+        container.addEventListener("mouseout", () => {
+            card.style.transform = "rotateY(0deg) rotateX(0deg)";
+            card.style.transition = "all 0.5s ease";
+            title.style.transform = "translate3d(0, 0, 0)";
+        });
+
+        const button = document.querySelector(".button");
+
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            button.classList.add("animate");
+
+            setTimeout(() => {
+            button.classList.remove("animate");
+            }, 600) //1s =1000ms
+        });
+    </script>
+
+</body>
+</html>
