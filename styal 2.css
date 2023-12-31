@@ -19,7 +19,7 @@
      position: absolute;
      align-items: center;
      justify-content: center;
-     margin-left: 95px;
+     margin-left: 60px;
      padding-top: 350px;
      color: black;
   }
@@ -29,7 +29,7 @@
      align-items: center;
      justify-content: center;
      color: black;
-     margin-left: 130px;
+     margin-left: 95px;
      padding-top: 325px;
   }
   .class{
@@ -38,14 +38,12 @@
      align-items: center;
      justify-content: center;
      color: black;
-     margin-left: 120px;
+     margin-left: 85px;
      padding-top: 380px;
   }
   .Insta{
     border:none;
     color: black;
     text-decoration: none;
-    cursor: pointer;
   }
-  
   
