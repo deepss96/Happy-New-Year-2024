@@ -19,8 +19,7 @@
         </div>
     </div>
     <div class="clickme">
-      <button class="button"><h4>Click Me</h4></button>
-   
+      <a href="page2.html" target="_blank"><button class="button"><h4>Click Me</h4></button></a>
       </div>
     <script>
         const container = document.querySelector(".container");
@@ -49,10 +48,6 @@
         });
 
         const button = document.querySelector(".button");
-
-        button.addEventListener("click", (e) => {
-            e.preventDefault();
-            button.classList.add("animate");
 
             setTimeout(() => {
             button.classList.remove("animate");
